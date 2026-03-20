@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー - AIカロリーカメラ</title>
+<meta name="description" content="AIカロリーカメラのプライバシーポリシー。個人情報の取扱い、収集する情報、利用目的等について説明しています。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#fafafa;
+  --text:#111;
+  --text-secondary:#555;
+  --text-muted:#888;
+  --accent:#e84530;
+  --border:#e5e5e5;
+  --card-bg:#fff;
+  --nav-height:64px;
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,"Noto Sans JP",-apple-system,system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* Nav */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  height:var(--nav-height);
+  background:rgba(255,255,255,0.92);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 clamp(1.5rem,4vw,3rem);
+}
+.nav-logo{
+  display:flex;align-items:center;gap:10px;
+  font-size:1.1rem;font-weight:700;color:var(--text);
+  text-decoration:none;
+}
+.nav-logo svg{width:32px;height:32px}
+.nav-links{display:flex;align-items:center;gap:2rem}
+.nav-links a{
+  font-size:0.9rem;font-weight:500;color:var(--text-secondary);
+  text-decoration:none;transition:color .2s;
+}
+.nav-links a:hover{color:var(--text)}
+.nav-links .btn{
+  background:var(--text);color:#fff;
+  padding:8px 20px;border-radius:8px;
+  font-size:0.85rem;font-weight:600;
+}
+.nav-links .btn:hover{opacity:0.85}
+
+/* Main content */
+.policy-container{
+  max-width:720px;
+  margin:0 auto;
+  padding:calc(var(--nav-height) + 60px) clamp(1.5rem,4vw,3rem) 80px;
+}
+
+.policy-header{text-align:center;margin-bottom:48px}
+.policy-header h1{
+  font-size:clamp(1.6rem,3vw,2.2rem);
+  font-weight:700;letter-spacing:-.02em;
+  margin-bottom:8px;
+}
+.policy-header .subtitle{
+  font-size:1rem;color:var(--text-secondary);
+  margin-bottom:4px;
+}
+.policy-header .date{
+  font-size:0.85rem;color:var(--text-muted);
+}
+
+.policy-intro{
+  font-size:0.95rem;
+  color:var(--text-secondary);
+  line-height:1.9;
+  margin-bottom:40px;
+}
+
+/* Sections */
+.policy-section{margin-bottom:36px}
+.policy-section h2{
+  font-size:1.2rem;font-weight:700;
+  color:var(--text);
+  padding-bottom:8px;
+  border-bottom:2px solid var(--accent);
+  margin-bottom:16px;
+}
+.policy-section h3{
+  font-size:1rem;font-weight:600;
+  color:var(--text);
+  margin:20px 0 10px;
+}
+.policy-section p{
+  font-size:0.92rem;
+  color:var(--text-secondary);
+  line-height:1.9;
+  margin-bottom:12px;
+}
+.policy-section ul{
+  list-style:none;
+  padding:0;margin:0 0 16px;
+}
+.policy-section ul li{
+  font-size:0.92rem;
+  color:var(--text-secondary);
+  line-height:1.9;
+  padding:4px 0 4px 20px;
+  position:relative;
+}
+.policy-section ul li::before{
+  content:"";
+  position:absolute;left:0;top:14px;
+  width:6px;height:6px;
+  background:var(--accent);
+  border-radius:50%;
+}
+.policy-section .note{
+  background:rgba(232,69,48,0.05);
+  border-left:3px solid var(--accent);
+  padding:12px 16px;
+  border-radius:0 8px 8px 0;
+  margin:12px 0;
+  font-size:0.88rem;
+  color:var(--text-secondary);
+}
+
+/* Footer */
+footer{
+  background:#111;
+  padding:40px clamp(1.5rem,4vw,3rem) 24px;
+}
+.footer-inner{
+  max-width:1100px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:20px;
+  padding-bottom:24px;
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+.footer-logo{
+  font-size:1rem;font-weight:700;color:#fff;
+  display:flex;align-items:center;gap:8px;
+}
+.footer-logo svg{width:28px;height:28px}
+.footer-links{display:flex;gap:24px;flex-wrap:wrap}
+.footer-links a{
+  font-size:0.85rem;color:rgba(255,255,255,0.6);
+  text-decoration:none;transition:color .2s;
+}
+.footer-links a:hover{color:#fff}
+.footer-copy{
+  max-width:1100px;margin:16px auto 0;
+  font-size:0.8rem;color:rgba(255,255,255,0.35);
+  text-align:center;
+}
+
+/* Responsive */
+@media(max-width:640px){
+  .nav-links a:not(.btn){display:none}
+  .footer-inner{flex-direction:column;align-items:flex-start}
+  .footer-links{flex-direction:column;gap:12px}
+}
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+  <a href="/" class="nav-logo">
+    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="40" height="40" rx="10" fill="#E84530"/>
+      <path d="M20 8c-1.5 4-6 8-6 14a6 6 0 0012 0c0-6-4.5-10-6-14z" fill="#fff"/>
+      <path d="M20 16c-1 2.5-3.5 5-3.5 9a3.5 3.5 0 007 0c0-4-2.5-6.5-3.5-9z" fill="#E84530"/>
+    </svg>
+    AIカロリーカメラ
+  </a>
+  <div class="nav-links">
+    <a href="/">ホーム</a>
+    <a href="/" class="btn">ダウンロード</a>
+  </div>
+</nav>
+
+<!-- Content -->
+<main class="policy-container">
+  <div class="policy-header">
+    <h1>プライバシーポリシー</h1>
+    <p class="subtitle">AIカロリーカメラ（AI Calorie Camera）</p>
+    <p class="date">最終更新日：2026年3月20日</p>
+  </div>
+
+  <p class="policy-intro">
+    ピーナッツグループ株式会社（以下「当社」といいます）は、当社が提供するiOSアプリケーション「AIカロリーカメラ」（以下「本アプリ」といいます）および関連するウェブサイト（https://aidiet.jp/）（以下、本アプリとウェブサイトを総称して「本サービス」といいます）における、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます）を定めます。本サービスをご利用いただくことにより、本ポリシーに基づく情報の収集・利用に同意いただいたものとみなします。
+  </p>
+
+  <!-- 1 -->
+  <section class="policy-section">
+    <h2>1. 用語の定義</h2>
+    <p>本ポリシーにおいて、以下の用語は次の意味を有します。</p>
+    <ul>
+      <li>「個人情報」とは、特定の個人を識別できる情報、または他の情報と容易に照合して特定の個人を識別できる情報をいいます。</li>
+      <li>「健康データ」とは、ユーザーが提供する身体的特徴、健康状態、栄養、目標、または活動に関する情報をいいます。具体的には、体重、身長、誕生日、性別、食事記録、栄養目標、目標体重、活動レベル、運動頻度、食事スタイル、減量スピード等を含みます。</li>
+      <li>「ユーザーコンテンツ」とは、ユーザーが本サービスにアップロードまたは送信する写真、画像、テキスト、食事エントリー、メタデータ、その他の入力情報をいいます。</li>
+      <li>「利用データ」とは、本サービスの利用に伴い自動的に収集されるデータをいいます。デバイス情報、アクティビティログ、分析データ等を含みます。</li>
+    </ul>
+  </section>
+
+  <!-- 2 -->
+  <section class="policy-section">
+    <h2>2. 収集する情報</h2>
+    <p>当社は、本サービスの提供にあたり、以下のカテゴリの情報を収集します。一部のカテゴリは、各種プライバシー関連法令において健康情報または機微な個人情報に該当する場合があります。</p>
+
+    <h3>2-1. ユーザーが直接提供する情報</h3>
+    <ul>
+      <li>ニックネーム</li>
+      <li>目標設定情報（減量・維持・増量の目標）</li>
+    </ul>
+
+    <h3>2-2. 健康データ</h3>
+    <p>カロリー推定および栄養管理機能を提供するため、以下の健康データを収集します。</p>
+    <ul>
+      <li>身体情報（身長、体重、目標体重、誕生日、性別）</li>
+      <li>食事に関する設定情報（活動レベル、運動頻度、食事スタイル、減量スピード、1日の食事回数など）</li>
+      <li>食事記録（カロリー、たんぱく質・脂質・炭水化物、食物繊維、糖質、塩分、食事内容のテキスト）</li>
+    </ul>
+    <p>健康データの提供はユーザーの任意ですが、基本的な栄養データ（食事記録等）がなければ本サービスの主要機能を適切に提供できない場合があります。</p>
+
+    <h3>2-3. ユーザーコンテンツ（食事画像を含む）</h3>
+    <p>ユーザーコンテンツには以下が含まれます。</p>
+    <ul>
+      <li>カロリー解析のためにアップロードされた食事画像</li>
+      <li>手動入力によるテキストエントリーおよびログ</li>
+    </ul>
+    <div class="note">
+      <strong>重要：</strong>食事画像は、外部AI解析サービス（Google Gemini API）に送信され、カロリー・栄養素の推定に使用されます。送信前に、画像に含まれる位置情報等のメタデータ（EXIF情報）は除去されます。当社は食事画像を自社のAIモデルの学習目的には使用しません。
+    </div>
+
+    <h3>2-4. アカウント連携時に取得する情報</h3>
+    <p>本アプリでは、アカウント連携は任意です。連携した場合、以下の情報を取得します。</p>
+    <ul>
+      <li>Apple IDに関連付けられた情報（Apple Sign-Inを利用した場合）</li>
+      <li>Googleアカウントに関連付けられた情報（Google Sign-Inを利用した場合）</li>
+    </ul>
+    <p>※ アカウント連携を行わない場合でも、本アプリの全機能をご利用いただけます。未連携時のデータはお使いの端末内にのみ保存されます。</p>
+
+    <h3>2-5. 自動的に取得する情報</h3>
+    <ul>
+      <li>プッシュ通知用のデバイストークン（通知を許可した場合）</li>
+      <li>サブスクリプションの購入・利用状況（RevenueCat経由で取得。クレジットカード番号等の決済情報は当社では保持しません）</li>
+    </ul>
+
+    <h3>2-6. 将来的に収集を予定している情報</h3>
+    <ul>
+      <li>Apple HealthKitデータ（歩数、消費カロリー等）：今後のアップデートで対応予定です。実装時には本ポリシーを更新し、別途同意を取得します。HealthKitデータは広告やデータマイニングの目的には使用しません。</li>
+    </ul>
+  </section>
+
+  <!-- 3 -->
+  <section class="policy-section">
+    <h2>3. 利用目的</h2>
+    <p>当社は、収集した情報を以下の目的で利用します。</p>
+
+    <h3>3-1. 本サービスの提供・改善</h3>
+    <ul>
+      <li>食事画像のAI解析によるカロリー・栄養素の推定</li>
+      <li>ユーザーの身体情報に基づく目標カロリー・栄養バランスの計算</li>
+      <li>食事記録の保存・表示・管理</li>
+      <li>パーソナライズされた通知の配信（食事リマインダー、モチベーションメッセージ等）</li>
+      <li>サブスクリプションの管理</li>
+      <li>アカウント連携時のデータ同期（端末間でのデータ引き継ぎ）</li>
+      <li>本サービスの改善・新機能の開発</li>
+      <li>サービスの安定性確保およびデバッグ</li>
+    </ul>
+
+    <h3>3-2. コミュニケーション</h3>
+    <ul>
+      <li>アップデートおよび新機能に関するお知らせ</li>
+      <li>サービスに関する通知</li>
+      <li>お問い合わせへの対応</li>
+    </ul>
+
+    <h3>3-3. 法令遵守・権利保護</h3>
+    <ul>
+      <li>不正行為の検知・防止</li>
+      <li>法令上の義務の履行</li>
+      <li>当社の権利の保護</li>
+    </ul>
+
+    <h3>3-4. 事業譲渡</h3>
+    <p>当社が合併、会社分割、事業譲渡、その他の組織再編を行う場合、ユーザーの情報は当該取引の一部として、法令に従い移転されることがあります。この場合、移転先の事業者に対して、本ポリシーと同等の情報管理を求めます。</p>
+  </section>
+
+  <!-- 4 -->
+  <section class="policy-section">
+    <h2>4. 外部サービスへのデータ送信</h2>
+    <p>本アプリでは、サービスの提供に必要な範囲で、以下の外部サービスにデータを送信します。いずれも、各サービスのプライバシーポリシーおよび利用規約に基づいて取り扱われます。</p>
+
+    <h3>4-1. Google Gemini API（食事画像解析）</h3>
+    <p>撮影した食事画像とテキストプロンプトをGoogle LLC（米国）が提供するGemini APIに送信し、カロリー・栄養素の推定結果を取得します。</p>
+    <ul>
+      <li>送信されるデータ：食事画像（EXIF情報除去済み）、解析リクエスト（テキスト）</li>
+      <li>Googleによるデータの保持：有料APIの場合、不正利用監視のためプロンプトデータが最大55日間保持されます。モデルの学習には使用されません。</li>
+      <li>詳細：<a href="https://ai.google.dev/gemini-api/docs/usage-policies" target="_blank" rel="noopener">https://ai.google.dev/gemini-api/docs/usage-policies</a></li>
+    </ul>
+
+    <h3>4-2. Supabase（データ保存・認証）</h3>
+    <p>アカウント連携時のユーザー認証およびデータの保存にSupabase Inc.（米国）を使用します。データは東京リージョンのサーバーに保存されます。</p>
+    <ul>
+      <li>送信されるデータ：プロフィール情報、食事記録</li>
+      <li>詳細：<a href="https://supabase.com/privacy" target="_blank" rel="noopener">https://supabase.com/privacy</a></li>
+    </ul>
+
+    <h3>4-3. RevenueCat（サブスクリプション管理）</h3>
+    <p>サブスクリプションの購入・管理にRevenueCat, Inc.（米国）を使用します。</p>
+    <ul>
+      <li>送信されるデータ：購入トランザクション情報、デバイス識別子</li>
+      <li>クレジットカード番号等の決済情報は、Apple（App Store）が処理し、当社およびRevenueCatでは保持しません。</li>
+      <li>詳細：<a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">https://www.revenuecat.com/privacy/</a></li>
+    </ul>
+
+    <h3>4-4. Apple Push Notification service（プッシュ通知）</h3>
+    <p>食事リマインダー等の通知配信にApple Push Notification service（APNs）を使用します。</p>
+    <ul>
+      <li>送信されるデータ：デバイストークン、通知内容</li>
+    </ul>
+  </section>
+
+  <!-- 5 -->
+  <section class="policy-section">
+    <h2>5. 国外へのデータ移転</h2>
+    <p>本サービスでは、食事画像のAI解析のために、ユーザーのデータが日本国外（主に米国）のサーバーで処理される場合があります。</p>
+    <p>当社は、日本の個人情報保護法（個人情報の保護に関する法律）に基づき、国外へのデータ移転に際して以下の措置を講じています。</p>
+    <ul>
+      <li>移転先の外部サービス事業者が、個人情報の保護に関して日本の法令と同等の水準にある体制を整備していることを確認しています。</li>
+      <li>各外部サービス事業者との間で、適切なデータ保護に関する契約条項（利用規約・データ処理規約）に基づきデータを取り扱っています。</li>
+      <li>移転先における個人情報の取扱いについて、定期的に確認を行います。</li>
+    </ul>
+    <p>具体的な移転先は以下のとおりです。</p>
+    <ul>
+      <li>Google LLC（米国）：食事画像のAI解析処理（Gemini API）</li>
+      <li>Supabase Inc.（米国法人、データ保存は東京リージョン）：認証・データ保存</li>
+      <li>RevenueCat, Inc.（米国）：サブスクリプション管理</li>
+    </ul>
+  </section>
+
+  <!-- 6 -->
+  <section class="policy-section">
+    <h2>6. ユーザーコンテンツとライセンス</h2>
+    <p>ユーザーは、本サービスにユーザーコンテンツ（食事画像等）を送信することにより、当社に対して、本サービスの運営・維持・改善のために必要な範囲で、当該コンテンツを使用、保存、処理する非独占的なライセンスを許諾するものとします。</p>
+    <p>当社は、ユーザーの食事画像を以下の目的でのみ使用します。</p>
+    <ul>
+      <li>Gemini APIを通じたカロリー・栄養素の解析</li>
+      <li>本アプリ内での食事記録の表示</li>
+    </ul>
+    <p>当社は、ユーザーの明示的な同意なく、食事画像を公開することはありません。また、食事画像を当社独自のAIモデルの学習に使用することはありません。</p>
+  </section>
+
+  <!-- 7 -->
+  <section class="policy-section">
+    <h2>7. データの保管と管理</h2>
+
+    <h3>7-1. ローカル保存（未ログイン時）</h3>
+    <p>アカウント連携を行っていない場合、すべてのデータ（プロフィール、食事記録、設定情報）はお使いの端末内にのみ保存されます。当社のサーバーには送信されません。</p>
+    <p>ただし、食事画像のAI解析を行う場合は、解析のために一時的にGoogle Gemini APIに画像が送信されます。</p>
+
+    <h3>7-2. クラウド保存（ログイン時）</h3>
+    <p>アカウント連携後は、データがSupabaseサーバー（東京リージョン）に保存されます。これにより、端末の変更時にもデータを引き継ぐことができます。ログイン時に端末内のローカルデータはサーバーに同期され、同期完了後にローカルデータはクリアされます。</p>
+  </section>
+
+  <!-- 8 -->
+  <section class="policy-section">
+    <h2>8. データの保持期間</h2>
+    <p>当社は、以下の基準に従いデータを保持します。</p>
+    <ul>
+      <li>個人情報・健康データ：ユーザーのアカウントが有効である間、またはユーザーが削除をリクエストするまで保持します。</li>
+      <li>食事記録・ユーザーコンテンツ：ユーザーが削除するか、アカウントを削除するまで保持します。</li>
+      <li>利用データ：サービスの安定性確保に必要な期間（原則として取得から1年間）保持し、その後削除または匿名化します。</li>
+      <li>バックアップデータ：標準的なバックアップ運用の一環として、限定的な期間保持します。</li>
+    </ul>
+    <p>法令に基づき保持が義務付けられている場合を除き、不要となったデータは速やかに削除または匿名化します。</p>
+  </section>
+
+  <!-- 9 -->
+  <section class="policy-section">
+    <h2>9. 情報セキュリティ</h2>
+    <p>当社は、ユーザーの個人情報を適切に管理するため、以下の措置を講じています。</p>
+    <ul>
+      <li>通信の暗号化（HTTPS/TLS）</li>
+      <li>Supabaseのrow-level security（RLS）によるデータアクセス制御</li>
+      <li>APIキーの環境変数による管理（ソースコードへの直接記載の禁止）</li>
+      <li>食事画像送信前のEXIF情報（位置情報等のメタデータ）の除去</li>
+      <li>最小権限の原則に基づいたデータアクセス</li>
+    </ul>
+    <p>ただし、インターネット上のデータ送信や電子的なストレージについて、100%の安全性を保証することはできません。</p>
+  </section>
+
+  <!-- 10 -->
+  <section class="policy-section">
+    <h2>10. ユーザーの権利</h2>
+    <p>ユーザーは、個人情報の保護に関する法律に基づき、以下の権利を有します。</p>
+    <ul>
+      <li><strong>データの確認：</strong>本アプリ内で、ご自身のプロフィール情報・食事記録をいつでも確認できます。</li>
+      <li><strong>データの修正：</strong>設定画面から、ニックネーム・体重・目標体重・目標等の情報を変更できます。</li>
+      <li><strong>データの削除：</strong>設定画面の「データ削除」から、保存されたすべてのデータを削除できます。削除されたデータは復元できませんのでご注意ください。</li>
+      <li><strong>アカウント連携の解除：</strong>設定画面からサインアウトすることで、アカウント連携を解除できます。</li>
+      <li><strong>通知の停止：</strong>設定画面から食事リマインダーのON/OFFを切り替えるか、iOSの設定から通知を無効化できます。</li>
+      <li><strong>個人情報の開示請求：</strong>当社が保有するユーザーの個人情報について、開示・訂正・利用停止等を請求することができます。ご請求は下記お問い合わせ先までご連絡ください。</li>
+    </ul>
+  </section>
+
+  <!-- 11 -->
+  <section class="policy-section">
+    <h2>11. 課金に関する情報</h2>
+    <p>本アプリはサブスクリプション方式（月額980円 / 年額4,980円）を採用しています。決済処理はすべてApple（App Store）を通じて行われ、当社がクレジットカード番号や銀行口座情報等を直接取得・保持することはありません。</p>
+    <p>サブスクリプションの管理にはRevenueCatを利用しており、購入状態の確認や復元処理に必要な情報（トランザクションID等）のみを取り扱います。</p>
+  </section>
+
+  <!-- 12 -->
+  <section class="policy-section">
+    <h2>12. 未成年者の利用について</h2>
+    <p>本サービスは、13歳未満のお子様を対象としたサービスではありません。当社は、13歳未満の方から意図的に個人情報を収集することはありません。13歳未満の方から個人情報を収集したことが判明した場合は、速やかに当該データを削除します。</p>
+  </section>
+
+  <!-- 13 -->
+  <section class="policy-section">
+    <h2>13. 情報漏洩時の対応</h2>
+    <p>万が一、個人情報の漏洩、滅失、毀損等が発生した場合、当社は以下の対応を行います。</p>
+    <ul>
+      <li>速やかに事実関係を調査し、被害の拡大防止措置を講じます。</li>
+      <li>個人情報保護委員会に対し、法令に基づく報告を行います。</li>
+      <li>影響を受けるユーザーに対し、速やかに通知を行います。</li>
+      <li>再発防止策を策定・実施します。</li>
+    </ul>
+  </section>
+
+  <!-- 14 -->
+  <section class="policy-section">
+    <h2>14. Cookie等の使用について</h2>
+    <p>本アプリはCookieを使用しません。ウェブサイト（https://aidiet.jp/）では、サイトの利用状況を把握するためにCookieを使用する場合があります。ブラウザの設定によりCookieの受け入れを拒否することができます。</p>
+  </section>
+
+  <!-- 15 -->
+  <section class="policy-section">
+    <h2>15. 第三者のリンクについて</h2>
+    <p>本サービスには、第三者のウェブサイトまたはサービスへのリンクが含まれる場合があります。これらのプライバシー慣行は各事業者に帰属し、当社はこれを管理するものではありません。</p>
+  </section>
+
+  <!-- 16 -->
+  <section class="policy-section">
+    <h2>16. プライバシーポリシーの改定</h2>
+    <p>当社は、法令の改正、サービスの変更、その他必要に応じて、本ポリシーを改定することがあります。重要な変更を行う場合は、本アプリ内または本サービスのウェブサイト上で通知します。改定後のポリシーは、本アプリまたはウェブサイトに掲載した時点から効力を生じます。</p>
+  </section>
+
+  <!-- 17 -->
+  <section class="policy-section">
+    <h2>17. お問い合わせ</h2>
+    <p>本ポリシーに関するお問い合わせ、個人情報の開示・訂正・削除のご請求は、下記までご連絡ください。</p>
+    <p>
+      <strong>ピーナッツグループ株式会社</strong><br>
+      メール：<a href="mailto:info@peanutsgrp.com">info@peanutsgrp.com</a><br>
+      ウェブサイト：<a href="https://peanutsgrp.com" target="_blank" rel="noopener">https://peanutsgrp.com</a>
+    </p>
+  </section>
+
+  <!-- 18 -->
+  <section class="policy-section">
+    <h2>18. 準拠法・管轄</h2>
+    <p>本ポリシーは日本法に基づき解釈されるものとします。本ポリシーに関する紛争については、東京地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
+    <p style="text-align:right;margin-top:32px;color:var(--text-muted);font-size:0.88rem;">2026年3月20日 制定</p>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="10" fill="#E84530"/>
+        <path d="M20 8c-1.5 4-6 8-6 14a6 6 0 0012 0c0-6-4.5-10-6-14z" fill="#fff"/>
+        <path d="M20 16c-1 2.5-3.5 5-3.5 9a3.5 3.5 0 007 0c0-4-2.5-6.5-3.5-9z" fill="#E84530"/>
+      </svg>
+      AIカロリーカメラ
+    </div>
+    <div class="footer-links">
+      <a href="https://peanutsgrp.com/">会社概要</a>
+      <a href="/privacy.html">プライバシーポリシー</a>
+      <a href="#">利用規約</a>
+      <a href="mailto:info@peanutsgrp.com">お問い合わせ</a>
+    </div>
+  </div>
+  <p class="footer-copy">&copy; 2026 Peanuts Group Inc. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
