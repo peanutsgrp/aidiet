@@ -45,7 +45,14 @@ body{
   font-size:1.1rem;font-weight:700;color:var(--text);
   text-decoration:none;
 }
-.nav-logo svg{width:32px;height:32px}
+.nav-logo-icon{
+  width:34px;height:34px;
+  background:linear-gradient(135deg,#ff6b4a 0%,#ff3b30 50%,#d42a20 100%);
+  border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.nav-logo-icon svg{width:20px;height:20px}
 .nav-links{display:flex;align-items:center;gap:2rem}
 .nav-links a{
   font-size:0.9rem;font-weight:500;color:var(--text-secondary);
@@ -151,7 +158,14 @@ footer{
   font-size:1rem;font-weight:700;color:#fff;
   display:flex;align-items:center;gap:8px;
 }
-.footer-logo svg{width:28px;height:28px}
+.footer-logo-icon{
+  width:28px;height:28px;
+  background:linear-gradient(135deg,#ff6b4a 0%,#ff3b30 50%,#d42a20 100%);
+  border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+}
+.footer-logo-icon svg{width:16px;height:16px}
 .footer-links{display:flex;gap:24px;flex-wrap:wrap}
 .footer-links a{
   font-size:0.85rem;color:rgba(255,255,255,0.6);
@@ -177,11 +191,12 @@ footer{
 <!-- Nav -->
 <nav class="nav">
   <a href="/" class="nav-logo">
-    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="40" height="40" rx="10" fill="#E84530"/>
-      <path d="M20 8c-1.5 4-6 8-6 14a6 6 0 0012 0c0-6-4.5-10-6-14z" fill="#fff"/>
-      <path d="M20 16c-1 2.5-3.5 5-3.5 9a3.5 3.5 0 007 0c0-4-2.5-6.5-3.5-9z" fill="#E84530"/>
-    </svg>
+    <div class="nav-logo-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 21c-4-4-8-7.5-8-11.5C4 6 7.5 3 12 3s8 3 8 6.5c0 4-4 7.5-8 11.5z"/>
+        <path d="M12 13c1.5-1.5 3-3 3-4.5 0-1.5-1.5-2.5-3-2.5S9 7 9 8.5c0 1.5 1.5 3 3 4.5z"/>
+      </svg>
+    </div>
     AIカロリーカメラ
   </a>
   <div class="nav-links">
@@ -199,7 +214,7 @@ footer{
   </div>
 
   <p class="policy-intro">
-    ピーナッツグループ株式会社（以下「当社」といいます）は、当社が提供するiOSアプリケーション「AIカロリーカメラ」（以下「本アプリ」といいます）および関連するウェブサイト（https://aidiet.jp/）（以下、本アプリとウェブサイトを総称して「本サービス」といいます）における、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます）を定めます。本サービスをご利用いただくことにより、本ポリシーに基づく情報の収集・利用に同意いただいたものとみなします。
+    株式会社ピーナッツグループ（以下「当社」といいます）は、当社が提供するiOSアプリケーション「AIカロリーカメラ」（以下「本アプリ」といいます）および関連するウェブサイト（https://aidiet.jp/）（以下、本アプリとウェブサイトを総称して「本サービス」といいます）における、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます）を定めます。本サービスをご利用いただくことにより、本ポリシーに基づく情報の収集・利用に同意いただいたものとみなします。
   </p>
 
   <!-- 1 -->
@@ -465,7 +480,7 @@ footer{
     <h2>17. お問い合わせ</h2>
     <p>本ポリシーに関するお問い合わせ、個人情報の開示・訂正・削除のご請求は、下記までご連絡ください。</p>
     <p>
-      <strong>ピーナッツグループ株式会社</strong><br>
+      <strong>株式会社ピーナッツグループ</strong><br>
       メール：<a href="mailto:info@peanutsgrp.com">info@peanutsgrp.com</a><br>
       ウェブサイト：<a href="https://peanutsgrp.com" target="_blank" rel="noopener">https://peanutsgrp.com</a>
     </p>
@@ -483,11 +498,12 @@ footer{
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">
-      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="40" height="40" rx="10" fill="#E84530"/>
-        <path d="M20 8c-1.5 4-6 8-6 14a6 6 0 0012 0c0-6-4.5-10-6-14z" fill="#fff"/>
-        <path d="M20 16c-1 2.5-3.5 5-3.5 9a3.5 3.5 0 007 0c0-4-2.5-6.5-3.5-9z" fill="#E84530"/>
-      </svg>
+      <div class="footer-logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 21c-4-4-8-7.5-8-11.5C4 6 7.5 3 12 3s8 3 8 6.5c0 4-4 7.5-8 11.5z"/>
+          <path d="M12 13c1.5-1.5 3-3 3-4.5 0-1.5-1.5-2.5-3-2.5S9 7 9 8.5c0 1.5 1.5 3 3 4.5z"/>
+        </svg>
+      </div>
       AIカロリーカメラ
     </div>
     <div class="footer-links">
